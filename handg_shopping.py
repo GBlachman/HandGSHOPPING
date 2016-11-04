@@ -17,8 +17,10 @@ def main_menu():
         6 Remove a list by nickname
         7 Exit """
 
-    print raw_input("Please choose a menu option 0-7: ")
-
+    menu_response =raw_input("Please choose a menu option 0-7: ")
+    
+    if int(menu_response) == 7:
+        return exit()
 #main_menu()
 
 # #7
@@ -26,7 +28,7 @@ def exit():
     print "Thank you, come again! :)"
     return main_menu()
 
-
+main_menu()
 
 # #1
 # def show_all_lists(""):
